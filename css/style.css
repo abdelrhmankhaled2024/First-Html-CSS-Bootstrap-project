@@ -1,0 +1,293 @@
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+}
+.body{
+    position: relative;
+}
+/**nav**/
+ nav{ 
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999999999999999;
+}
+.dropdown:hover > .dropdown-menu,.dropend:hover > .dropdown-menu{
+    display: block;
+    margin-top: .125rem;
+}
+.dropend:hover > .dropdown-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: .125rem;
+}
+.navbar li {
+    position: relative;
+  }
+  .navbar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .navbar a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .navbar li {
+    display: inline-block;
+    margin: 7px 15px;
+  }
+  .navbar a:active::before {
+    visibility: visible;
+    transform: scaleX(1)
+  }
+/**header**/
+header{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh ;
+    background-attachment: fixed;
+    position: relative;
+}
+#home .container-fluid{
+    text-align: center;
+    margin: auto;
+}
+#home .container-fluid h2{
+    padding-top: 20%;
+    font-size: 4.5rem ;
+    color: white;
+    padding-bottom: 2rem;
+}
+#home .container-fluid span{
+    font-size: 2rem ;
+    color: white;
+    font-weight: 500;
+}
+/**MAIN**/
+/**about**/
+#about{
+    background-color: #F5F5F5;
+    padding: 5rem 0rem;
+}
+#about .container{
+    background-color: #FFFFFF;
+    padding: 4rem 3rem !important;
+}
+#about img{
+    width: 100%;
+    border-radius: 5px;
+}
+#about .left-part p{
+    margin: 0;
+    color: #4E4E4E;
+}
+#about .left-part h3{
+    padding: 2rem 0rem 1.5rem 0rem;
+    font-size: 1.2rem;
+}
+#about .progress{
+    margin-bottom: 1rem;
+}
+#about .about-me{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+#about .about-me:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    top: 2.5rem;
+    left:0;
+}
+#about .right-part p{
+    color: #4E4E4E;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+#about .left-right p{
+    padding: .3rem 0rem;
+}
+/**services**/
+#services{
+    background-color: #F5F5F5;
+    padding: 1rem 0rem;
+}
+#services h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+#services .serv-p{
+    color: #4E4E4E;
+    position: relative;
+}
+#services .serv-p::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #0078ff;
+    width: 40px;
+    top: 2rem;
+    left:48.5%;
+}
+#services .part{
+    background-color: #FFFFFF;
+    padding: 1rem 0rem;
+}
+#services .part i{
+    font-size: 2rem;
+    margin: auto;
+    transition: all 1s;
+}
+#services .part .icon{
+    border-radius: 50%;
+    border-width: .7rem;
+    border-color: #0078ff;
+    border-style: solid;
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+#services .part:hover .icon{
+    border-color: #CDE1F8;
+    background-color: #0078ff;
+}
+#services .part h3{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+#services .part p{
+    color: #4E4E4E;
+    line-height: 2rem;
+}
+#services .sec-part{
+    background-image:url(../img/counters-bg.jpg), linear-gradient(rgba(0, 120, 255,.5), rgba(0, 120, 255,.5));
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 5rem 0rem 7rem 0rem;
+    position: relative;
+}
+#services .sec-body .icon{
+    border-radius: 50%;
+    border-width: .7rem;
+    border-color: #CDE1F8;
+    border-style: solid;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .sec-body p{
+    color: white;
+    font-size: 2rem;
+}
+#services .sec-body h3{
+    color: white;
+    font-size: 1rem;
+}
+#services .sec-body i{
+    font-size: 2rem;
+}
+/**work**/
+#work{
+    background-color: #F5F5F5;
+    padding: 5rem 0rem 0rem;
+}
+#work h2{
+    background-color: #F5F5F5;
+    font-size: 3rem;
+    font-weight: bold;
+}
+#work span{
+  color: #0078FF;
+}
+#work p{
+ position: relative;
+}
+#work .parag::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #0078ff;
+    width: 40px;
+    top: 2rem;
+    left:48.5%;
+}
+#work .icon{
+    margin: auto;
+}
+#work .icon i{
+    border-radius: 50%;
+    border-color: #0078FF;
+    border-style: solid;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+#work .card .img{
+    overflow: hidden;
+}
+#work .card img{
+    transition: all 1s;
+}
+#work .card:hover img{
+    scale: 1.3;
+}
+#work .card:hover img{
+ cursor: pointer;
+}
+#work .work-sec{
+    width: 100%;
+    background-image: url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 10rem;
+    margin-top: 5rem;
+}
+#work .work-sec .carousel-indicators button {
+    width:12px;
+    height: 12px;
+    border-radius: 50%;
+}
+#work .work-sec .img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: auto;
+    border-style: solid;
+    overflow: hidden;
+    border: none;
+}

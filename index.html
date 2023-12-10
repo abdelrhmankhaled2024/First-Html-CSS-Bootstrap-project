@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.">
+    <meta name="author" content="Abdelrhman Khaled">
+    <link rel="icon" href="./img/icon.jfif" sizes="16x16" >
+    <title>DevFolio</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--fontawesome css-->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--style css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <nav>
+        <nav id="navbar-example" class="navbar navbar-expand-lg bg-black bg-opacity-75 navbar-dark ">
+            <div class="container">
+              <a class="navbar-brand fs-3 text-light fw-medium" href="#">DevFolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active fw-bolder" aria-current="page" href="#home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  fw-bolder" aria-current="page" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  fw-bolder " aria-current="page" href="#services">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  fw-bolder " aria-current="page" href="#work">WORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  fw-bolder" aria-current="page" href="#blog">BLOG</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle fw-bolder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      DROP DOWN
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                      <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle text-black text-align-start" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Deep Drop Down
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Deep Drop Down 1</a></li>
+                          <li><a class="dropdown-item" href="#">Deep Drop Down 2</a></li>
+                          <li><a class="dropdown-item" href="#">Deep Drop Down 3</a></li>
+                          <li><a class="dropdown-item" href="#">Deep Drop Down 4</a></li>
+                          <li><a class="dropdown-item" href="#">Deep Drop Down 5</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                      <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                      <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fw-bolder" aria-current="page" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </nav>
+    <!--header-->
+    <header>
+      <div id="home">
+         <div class="container-fluid mx-auto">
+          <h2>I am Morgan Freeman</h2>
+          <span>
+            <p class="typewrite" data-period="2000" data-type='[ "Photographer", "Designer", "Developer"]'>
+              <span class="wrap"></span>
+            </p>
+          </span>
+         </div>
+      </div>
+    </header>
+    <!--main part-->
+    <main>
+      <!--about section-->
+      <section id="about">
+        <div class="container ms-auto about-container shadow p-3 mb-5 bg-body-tertiary p">
+          <div class="row">
+            <!--left part-->
+            <div class="col-lg-6 left-part">
+              <div class="row">
+                <div class="col-lg-3"><img src="./img/testimonial-2.jpg" alt="testimonial"></div>
+                <div class="col-lg-7 left-right ms-auto gy-1 ">
+                  <p>Name: Morgan Freeman</p>
+                  <p>Profile: full stack developer</p>
+                  <p>Email: contact@example.com</p>
+                  <p>Phone: (617) 557-0089</p>
+                </div>
+                <div class="col-12">
+                  <h3>Skill</h3>
+                  <p>HTML 85%</p>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 85%"></div>
+                  </div>
+                  <p>CSS3 75%</p>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                  <p>PHP 50%</p>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                  <p>JAVASCRIPT 90%</p>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>   
+            </div>
+            <!--right part-->
+            <div class="col-lg-6 right-part">
+              <h3 class="about-me">About me</h3>
+              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+              <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
+              <p>Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--services section-->
+      <section id="services">
+        <!--services firstpart-->
+        <div class="container text-center">
+          <h2>SERVICES</h2>
+          <p class="serv-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="row gy-2">
+            <div class="col-lg-4">
+              <div class="part shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+              <div class="icon"><i class="fa-solid fa-briefcase" style="color: #000000;"></i></div>
+              <h3>WEB DESIGN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+            </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="part shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+              <div class="icon"><i class="fa-regular fa-rectangle-list" style="color: #000000;"></i></div>
+              <h3>WEB DEVELOPMENT</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="part shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+              <div class="icon"><i class="fa-solid fa-signal" style="color: #000000;"></i></div>
+              <h3>PHOTOGRAPHY</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+            </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="part shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+              <div class="icon"><i class="fa-solid fa-binoculars" style="color: #000000;"></i></div>
+              <h3>RESPONSIVE DESIGN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+            </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="part shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+              <div class="icon"><i class="fa-regular fa-sun" style="color: #000000;"></i></div>
+              <h3>GRAPHIC DESIGN</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+            </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="part shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+              <div class="icon"><i class="fa-regular fa-calendar-days" style="color: #000000;"></i></div>
+              <h3>MARKETING SERVICES</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!--services seconedpart-->
+        <div class="text-center sec-part">
+          <div class="container sec-body">
+           <div class="row">
+            <div class="col-lg-3">
+              <div class="content">
+                <div class="icon">
+                  <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                </div>
+                <p>450</p>
+                <h3>WORKS COMPLETED</h3>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="content">
+                <div class="icon">
+                  <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+                </div>
+                <p>25</p>
+                <h3>YEARS OF EXPERIENCE</h3>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="content">
+                <div class="icon">
+                  <i class="fa-regular fa-address-card" style="color: #ffffff;"></i>
+                </div>
+                <p>550</p>
+                <h3>TOTAL CLIENTS</h3>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="content">
+                <div class="icon">
+                  <i class="fa-solid fa-award" style="color: #ffffff;"></i>
+                </div>
+                <p>48</p>
+                <h3>AWARD WON</h3>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </section>
+      <!--work section-->
+      <section id="work">
+        <div class="container text-center">
+          <!--portfolio part-->
+          <h2>PORTFOLIO</h2>
+          <p class="parag">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="row gx-4 gy-5">
+            <!--part-->
+            <div class="col-lg-4 ">
+              <div class="card" >
+                <div class="img"><img src="./img/work-1.jpg" class="card-img-top" alt="work1"></div>
+                <div class="card-body text-start row">
+                  <div class="col-lg-8">
+                  <h5 class="card-title">Lorem impsum dolor</h5>
+                  <p class="card-text"><span>Web Design</span> / 18 Sep. 2018</p>
+                  </div>
+                  <div class="col-lg-4 icon text-end align-middle"><a href="#"><i class="fa-solid fa-plus" style="color: #0078ff;"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!--part-->
+            <div class="col-lg-4 ">
+              <div class="card" >
+                <div class="img"><img src="./img/work-2.jpg" class="card-img-top" alt="work2"></div>
+                <div class="card-body text-start row">
+                  <div class="col-lg-8">
+                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                  <p class="card-text"><span>Web Design</span> / 18 Sep. 2018</p>
+                  </div>
+                  <div class="col-lg-4 icon text-end align-middle"><a href="#"><i class="fa-solid fa-plus" style="color: #0078ff;"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!--part-->
+            <div class="col-lg-4 ">
+              <div class="card" >
+                <div class="img"><img src="./img/work-3.jpg" class="card-img-top" alt="work3"></div>
+                <div class="card-body text-start row">
+                  <div class="col-lg-8">
+                  <h5 class="card-title">Loreda Cuno Nere</h5>
+                  <p class="card-text"><span>Web Design</span> / 18 Sep. 2018</p>
+                  </div>
+                  <div class="col-lg-4 icon text-end align-middle"><a href="#"><i class="fa-solid fa-plus" style="color: #0078ff;"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!--part-->
+            <div class="col-lg-4 ">
+              <div class="card" >
+                <div class="img"><img src="./img/work-4.jpg" class="card-img-top" alt="work4"></div>
+                <div class="card-body text-start row">
+                  <div class="col-lg-8">
+                  <h5 class="card-title">Bindo Laro Cado</h5>
+                  <p class="card-text"><span>Web Design</span> / 18 Sep. 2018</p>
+                  </div>
+                  <div class="col-lg-4 icon text-end align-middle"><a href="#"><i class="fa-solid fa-plus" style="color: #0078ff;"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!--part-->
+            <div class="col-lg-4 ">
+              <div class="card" >
+                <div class="img"><img src="./img/work-5.jpg" class="card-img-top" alt="work5"></div>
+                <div class="card-body text-start row">
+                  <div class="col-lg-8">
+                  <h5 class="card-title">Studio Lena Mado</h5>
+                  <p class="card-text"><span>Web Design</span> / 18 Sep. 2018</p>
+                  </div>
+                  <div class="col-lg-4 icon text-end align-middle"><a href="#"><i class="fa-solid fa-plus" style="color: #0078ff;"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!--part-->
+            <div class="col-lg-4 ">
+              <div class="card" >
+                <div class="img"><img src="./img/work-6.jpg" class="card-img-top" alt="work6"></div>
+                <div class="card-body text-start row">
+                  <div class="col-lg-8">
+                  <h5 class="card-title">Studio Big Bang</h5>
+                  <p class="card-text"><span>Web Design</span> / 18 Sep. 2018</p>
+                  </div>
+                  <div class="col-lg-4 icon text-end align-middle"><a href="#"><i class="fa-solid fa-plus" style="color: #0078ff;"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--work section-->
+        <div class="work-sec">
+          <div class="container text-center">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="img"><img src="./img/testimonial-2.jpg" class="d-block w-100" alt="XAVI"></div>
+                  <div class="carousel-caption position-static d-none d-md-block">
+                    <h5>XAVI ALONSO</h5>
+                    <p>
+                      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img"><img src="./img/testimonial-4.jpg" class="d-block w-100" alt="MARTA"></div>
+                  <div class="carousel-caption position-static d-none d-md-block">
+                    <h5>MARTA SOCRATE</h5>
+                    <p>
+                      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-indicators position-static">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Blog section-->
+      <section id="blog">
+        <div class="container text-center">
+          <div class="main-caption text-center">
+            <h2>BLOG</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="row card-part">
+            <div class="col-lg-4">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/post-1.jpg" class="card-img-top" alt="post1">
+                <div class="card-body text-start">
+                  <h5 class="card-title">See more ideas about Travel</h5>
+                  <p class="card-text">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-start">Morgan Freeman</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/post-2.jpg" class="card-img-top" alt="post2">
+                <div class="card-body text-start">
+                  <h5 class="card-title">See more ideas about Travel</h5>
+                  <p class="card-text">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-start">Morgan Freeman</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/post-3.jpg" class="card-img-top" alt="post3">
+                <div class="card-body text-start">
+                  <h5 class="card-title">See more ideas about Travel</h5>
+                  <p class="card-text">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-start">Morgan Freeman</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<!--bootstrap js-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+<!--myjs js-->
+    <script src="./js/myjs.js"></script>
+</body>
+</html>
